@@ -13,7 +13,6 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  /* --bg-main: #e5e5e5; */
   --white: #ffffff;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --bg-dark: #2f303a;
@@ -283,6 +282,7 @@ footer {
 
 .benefit-title {
   margin-bottom: 10px;
+  margin-top: 30px;
 
   font-weight: 700;
   font-size: 14px;
@@ -312,12 +312,34 @@ footer {
   margin-left: 30px;
 }
 
-/* .benefit-list > .item:nth-child(3n)::before {
+.benefit-item::before {
+  display: block;
+  height: 120px;
   content: '';
-  width: 70px;
-  height: 70px;
+
+  background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+
+  border-radius: 4px;
+}
+
+.icon-details::before {
   background-image: url('../images/antena.png');
-} */
+}
+
+.icon-in-time::before {
+  background-image: url('../images/clock.png');
+}
+
+.icon-planning::before {
+  background-image: url('../images/diagram.png');
+}
+
+.icon-technology::before {
+  background-image: url('../images/astronaut.png');
+}
 
 .team {
   background-color: var(--secondary-bg-color);
