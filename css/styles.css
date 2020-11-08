@@ -201,6 +201,25 @@ footer {
 .footer-wrap {
   display: flex;
   flex-direction: column;
+
+  margin-right: 70px;
+}
+
+.join-us-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.join-us .social-link {
+  --color1: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .hero-title,
@@ -269,7 +288,8 @@ footer {
 }
 
 .hero-content .visually-hidden,
-.benefits .visually-hidden {
+.benefits .visually-hidden,
+.gallery .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -378,26 +398,63 @@ footer {
   margin-right: 30px;
 }
 
-.social-list {
+.social-list,
+.customer-list {
   display: flex;
   justify-content: center;
 }
 
 .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
-  background-color: red;
+}
+
+.team .social-link {
+  background-color: var(--white);
+}
+
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icon {
-  fill: AFB1B8;
+.customer-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  --color1: var(--white);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  --color1: var(--accent-color);
 }
 
 .work-list {
@@ -413,7 +470,8 @@ footer {
 }
 
 .work-title,
-.team-title {
+.team-title,
+.customer-title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -437,6 +495,11 @@ footer {
 
 .profession {
   margin-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
 }
 
 .filter-button {
@@ -485,6 +548,12 @@ footer {
   margin-bottom: 30px;
 
   background-color: var(--white);
+}
+
+.examples > .item:hover,
+.examples > .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples > .item:nth-child(3n) {
